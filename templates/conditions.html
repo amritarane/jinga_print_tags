@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions</title>
+</head>
+<body>
+    <h1>simple if -else condition</h1>
+    {% if a > b %}
+        <center>
+            <h1> a is maximun</h1>
+        </center>
+    {% else %}
+    <center>
+        <h1> b is maximun</h1>
+    </center>
+    {% endif %}
+
+
+
+    <h1>simple if -elif condition</h1>
+    {% if a > b and a > c %}
+        <center>
+            <h1> a is maximun</h1>
+        </center>
+    {% elif b > c %}
+    <center>
+        <h1> b is maximun</h1>
+    </center>
+    {% else %}
+    <center>
+        <h1> c is maximun</h1>
+    </center>
+    {% endif %}
+
+    <h1>nested if -else condition</h1>
+    {% if a > b %}
+        {% if a > c %}
+        <center>
+            <h1> a is maximun</h1>
+        </center>
+        {% else %}
+        <center>
+            <h1> c is maximun</h1>
+        </center>
+        {% endif %}
+    {% else %}
+        {% if b > c %}
+        <center>
+            <h1> b is maximun</h1>
+        </center>
+        {% else %}
+        <center>
+            <h1> c is maximun</h1>
+        </center>
+        {% endif %}
+    {% endif %} 
+</body>
+</html>
